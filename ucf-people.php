@@ -20,12 +20,14 @@ include_once 'includes/ucf-people-group-taxonomy.php';
 
 if ( ! function_exists( 'ucf_people_plugin_activation' ) ) {
 	function ucf_people_plugin_activation() {
+		flush_rewrite_rules();
 		return;
 	}
 }
 
 if ( ! function_exists( 'ucf_people_plugin_deactivation' ) ) {
 	function ucf_people_plugin_deactivation() {
+		flush_rewrite_rules();
 		return;
 	}
 }

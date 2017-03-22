@@ -66,7 +66,7 @@ if ( ! class_exists( 'UCF_People_Group_Taxonomy' ) ) {
 		public static function args( $labels ) {
 			$singular = $labels['singular'];
 			$plural = $labels['plural'];
-			$slug = $label['slug'];
+			$slug = $labels['slug'];
 
 			$args = array(
 				'labels'                     => self::labels( $singular, $plural ),
@@ -78,7 +78,8 @@ if ( ! class_exists( 'UCF_People_Group_Taxonomy' ) ) {
 				'show_tagcloud'              => true,
 				'rewrite'                    => array(
 					'slug'         => $slug,
-					'hierarchical' => true
+					'hierarchical' => true,
+					'ep_mask'      => EP_PERMALINK | EP_PAGES
 				)
 			);
 
