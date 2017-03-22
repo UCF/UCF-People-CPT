@@ -10,8 +10,6 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 		 * Registers the People custom post type.
 		 * @author Jim Barnes
 		 * @since 1.0.0
-		 * @param $singular string | The singular form for the CPT labels. Default 'person'.
-		 * @param $plural string | The plural form for the CPT labels. Default 'people'.
 		 **/
 		public static function register() {
 			$singular = apply_filters( 'ucf_people_singular_label', 'Person' );
