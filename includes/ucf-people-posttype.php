@@ -14,7 +14,7 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 		public static function register() {
 			$singular = apply_filters( 'ucf_people_singular_label', 'Person' );
 			$plural = apply_filters( 'ucf_people_plural_label', 'People' );
-			register_post_type( 'people', self::args( $singular, $plural ) );
+			register_post_type( 'person', self::args( $singular, $plural ) );
 		}
 
 		/**
