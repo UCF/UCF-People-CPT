@@ -20,7 +20,7 @@ if ( ! class_exists( 'UCF_People_Group_Taxonomy' ) ) {
 							'slug'     => 'people-groups',
 						) );
 
-			register_taxonomy( 'people_group', array( 'people' ), self::args( $labels ) );
+			register_taxonomy( 'people_group', array( 'person' ), self::args( $labels ) );
 		}
 
 		/**
