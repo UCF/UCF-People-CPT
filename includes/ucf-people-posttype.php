@@ -98,7 +98,8 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 		 **/
 		public static function taxonomies() {
 			$taxonomies = array(
-				'post_tag'
+				'post_tag',
+				'category'
 			);
 
 			$taxonomies = apply_filters( 'ucf_people_taxonomies', $taxonomies );
