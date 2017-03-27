@@ -112,5 +112,22 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 
 			return $taxonomies;
 		}
+
+		public static function append_metadata( $person ) {
+			$meta = get_post_meta( $person->ID );
+			foreach( $meta as $key=>$value ) {
+				if ( is_array( $value ) && count( $value ) === 1 ) {
+					$meta[$key] = $value[0];
+				}
+
+				if ( $key === '_thumbnail_id' ) {
+					$src = wp_get_attachment_image_src( $value[0], 'medium' );
+					$meta['thumbnail_url'] = $src[0];
+				}
+			}
+
+			$person->metadata = $meta;
+			return $person;
+		}
 	}
 }
