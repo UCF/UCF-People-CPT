@@ -119,12 +119,9 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 				if ( is_array( $value ) && count( $value ) === 1 ) {
 					$meta[$key] = $value[0];
 				}
-
-				if ( $key === '_thumbnail_id' ) {
-					$src = wp_get_attachment_image_src( $value[0], 'medium' );
-					$meta['thumbnail_url'] = $src[0];
-				}
 			}
+
+			$meta = apply_filters( 'ucf_people_format_metadata', $meta );
 
 			$person->metadata = $meta;
 			return $person;
