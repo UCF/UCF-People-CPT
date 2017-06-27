@@ -12,7 +12,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 define( 'UCF_PEOPLE__PLUGIN_URL', plugins_url( basename( dirname( __FILE__ ) ) ) );
 define( 'UCF_PEOPLE__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'UCF_PEOPLE__STATIC_URL', UCF_DEGREE__PLUGIN_URL . '/static' );
+define( 'UCF_PEOPLE__STATIC_URL', UCF_PEOPLE__PLUGIN_URL . '/static' );
 define( 'UCF_PEOPLE__PLUGIN_FILE', __FILE__ );
 
 include_once 'includes/ucf-people-posttype.php';
