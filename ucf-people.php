@@ -20,6 +20,8 @@ include_once 'includes/ucf-people-group-taxonomy.php';
 
 if ( ! function_exists( 'ucf_people_plugin_activation' ) ) {
 	function ucf_people_plugin_activation() {
+		UCF_People_PostType::register();
+		UCF_People_Group_Taxonomy::register();
 		flush_rewrite_rules();
 		return;
 	}
