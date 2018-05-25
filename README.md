@@ -20,6 +20,9 @@ Provides a custom post type for describing people and a taxonomy for people grou
 
 ## Changelog ##
 
+### 1.0.1 ###
+* Cleaned up some php warnings related to empty $meta object.
+
 ### 1.0.0 ###
 * Initial release
 

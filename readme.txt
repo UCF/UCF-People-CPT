@@ -2,8 +2,8 @@
 Contributors: ucfwebcom
 Tags: ucf, people, person, custom post type
 Requires at least: 4.7.3
-Tested up to: 4.7.3
-Stable tag: 1.0.0
+Tested up to: 4.9.6
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl-3.0.html
 
@@ -26,6 +26,9 @@ Provides a custom post type for describing people and a taxonomy for people grou
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Cleaned up some php warnings related to empty $meta object.
 
 = 1.0.0 =
 * Initial release
