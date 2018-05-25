@@ -115,6 +115,10 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 
 		public static function append_metadata( $person ) {
 			$meta = get_post_meta( $person->ID );
+
+			// Short circuit if there is no meta
+			if ( ! $meta ) return $person;
+
 			foreach( $meta as $key=>$value ) {
 				if ( is_array( $value ) && count( $value ) === 1 ) {
 					$meta[$key] = $value[0];
