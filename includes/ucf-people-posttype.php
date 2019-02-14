@@ -79,7 +79,7 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 				'show_in_admin_bar'     => true,
 				'show_in_nav_menus'     => true,
 				'can_export'            => true,
-				'has_archive'           => true,		
+				'has_archive'           => false,
 				'exclude_from_search'   => false,
 				'publicly_queryable'    => true,
 				'capability_type'       => 'post',
@@ -94,7 +94,7 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 		 * Returns a list of taxonomies to add during post type registration.
 		 * @author Jim Barnes
 		 * @since 1.0.0
-		 * @return Array<string> 
+		 * @return Array<string>
 		 **/
 		public static function taxonomies() {
 			$taxonomies = array(
@@ -115,6 +115,10 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 
 		public static function append_metadata( $person ) {
 			$meta = get_post_meta( $person->ID );
+
+			// Short circuit if there is no meta
+			if ( ! $meta ) return $person;
+
 			foreach( $meta as $key=>$value ) {
 				if ( is_array( $value ) && count( $value ) === 1 ) {
 					$meta[$key] = $value[0];
