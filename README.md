@@ -33,6 +33,10 @@ If you add this snippet to your theme, you'll need to flush permalink settings f
 
 ## Changelog ##
 
+### 1.1.0 ###
+Enhancements:
+* Added REST endpoint support for Person post type.
+
 ### 1.0.3 ###
 * Auto-generated archives for the Person post type have been disabled.  **You should flush permalinks on your site after upgrading to v1.0.3; see [upgrade notices below](#upgrade-notice)**
 
