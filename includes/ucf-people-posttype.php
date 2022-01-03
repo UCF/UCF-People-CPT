@@ -83,6 +83,7 @@ if ( ! class_exists( 'UCF_People_PostType' ) ) {
 				'exclude_from_search'   => false,
 				'publicly_queryable'    => true,
 				'capability_type'       => 'post',
+				'show_in_rest'          => true
 			);
 
 			$args = apply_filters( 'ucf_people_post_type_args', $args );
