@@ -2,8 +2,8 @@
 Contributors: ucfwebcom
 Tags: ucf, people, person, custom post type
 Requires at least: 4.7.3
-Tested up to: 4.9.6
-Stable tag: 1.0.3
+Tested up to: 5.3
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl-3.0.html
 
@@ -39,6 +39,10 @@ If you add this snippet to your theme, you'll need to flush permalink settings f
 
 
 == Changelog ==
+
+= 1.1.0 =
+Enhancements:
+* Added REST endpoint support for Person post type.
 
 = 1.0.3 =
 * Auto-generated archives for the Person post type have been disabled.  **You should flush permalinks on your site after upgrading to v1.0.3; see [upgrade notices below](#upgrade-notice)**
