@@ -33,6 +33,10 @@ If you add this snippet to your theme, you'll need to flush permalink settings f
 
 ## Changelog ##
 
+### 1.1.1 ###
+Enhancements:
+ * Added composer file.
+
 ### 1.1.0 ###
 Enhancements:
 * Added REST endpoint support for Person post type.

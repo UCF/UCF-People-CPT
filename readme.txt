@@ -2,8 +2,8 @@
 Contributors: ucfwebcom
 Tags: ucf, people, person, custom post type
 Requires at least: 4.7.3
-Tested up to: 5.3
-Stable tag: 1.1.0
+Tested up to: 6.1
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/copyleft/gpl-3.0.html
 
@@ -39,6 +39,10 @@ If you add this snippet to your theme, you'll need to flush permalink settings f
 
 
 == Changelog ==
+
+= 1.1.1 =
+Enhancements:
+ * Added composer file.
 
 = 1.1.0 =
 Enhancements:

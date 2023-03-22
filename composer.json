@@ -1,0 +1,8 @@
+{
+    "name": "ucf/ucf-people-cpt",
+    "description": "Provides a custom post type for describing people and a taxonomy for people groups.",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
